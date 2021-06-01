@@ -97,6 +97,7 @@ public class MainActivity extends AppCompatActivity {
     private void plus() {
         resultOp = firstValue + secondValue;
         textView.setText(firstValue + "+" + secondValue + "=" + resultOp);
+
     }
 
 
