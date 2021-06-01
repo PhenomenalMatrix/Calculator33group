@@ -21,7 +21,8 @@
             android:layout_width="match_parent"
             android:layout_height="100dp"
             android:layout_gravity="bottom"
-            android:text="0"
+            android:hint="0"
+            android:textColorHint="@color/white"
             android:textColor="@color/white"
             android:textSize="80sp"
             android:gravity="end"
@@ -41,7 +42,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:gravity="center_horizontal">
+            android:gravity="center">
 
             <Button
                 android:id="@+id/clear_btn"
@@ -52,6 +53,7 @@
                 android:text="AC"
                 android:textSize="30sp"
                 android:backgroundTint="@color/gray"
+                android:onClick="onActionClick"
                 />
             <Button
                 android:id="@+id/skobki_btn"
@@ -88,7 +90,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:gravity="center_horizontal">
+            android:gravity="center">
 
             <Button
                 android:id="@+id/seven_btn"
@@ -112,6 +114,7 @@
                 android:textColor="@color/white"
                 android:textSize="30sp"
                 android:backgroundTint="@color/smokie_black"
+                android:onClick="onNumberClick"
                 />
             <Button
                 android:id="@+id/nine_btn"
@@ -123,6 +126,7 @@
                 android:textColor="@color/white"
                 android:textSize="30sp"
                 android:backgroundTint="@color/smokie_black"
+                android:onClick="onNumberClick"
                 />
             <Button
                 android:id="@+id/umnoj_btn"
@@ -138,7 +142,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:gravity="center_horizontal">
+            android:gravity="center">
 
             <Button
                 android:id="@+id/four_btn"
@@ -150,6 +154,7 @@
                 android:textSize="30sp"
                 android:text="4"
                 android:textColor="@color/white"
+                android:onClick="onNumberClick"
                 />
             <Button
                 android:id="@+id/five_btn"
@@ -161,6 +166,7 @@
                 android:textSize="30sp"
                 android:text="5"
                 android:textColor="@color/white"
+                android:onClick="onNumberClick"
                 />
             <Button
                 android:id="@+id/six_btn"
@@ -172,8 +178,10 @@
                 android:textSize="30sp"
                 android:text="6"
                 android:textColor="@color/white"
+                android:onClick="onNumberClick"
                 />
             <Button
+                android:id="@+id/minus_btn"
                 android:layout_width="80dp"
                 android:layout_height="70dp"
                 android:layout_margin="10dp"
@@ -186,7 +194,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:gravity="center_horizontal">
+            android:gravity="center">
 
             <Button
                 android:id="@+id/one_btn"
@@ -198,6 +206,7 @@
                 android:textSize="30sp"
                 android:text="1"
                 android:textColor="@color/white"
+                android:onClick="onNumberClick"
                 />
             <Button
                 android:id="@+id/two_btn"
@@ -209,6 +218,7 @@
                 android:textSize="30sp"
                 android:text="2"
                 android:textColor="@color/white"
+                android:onClick="onNumberClick"
                 />
             <Button
                 android:id="@+id/three_btn"
@@ -220,8 +230,10 @@
                 android:textSize="30sp"
                 android:text="3"
                 android:textColor="@color/white"
+                android:onClick="onNumberClick"
                 />
             <Button
+                android:id="@+id/plus_btn"
                 android:layout_width="80dp"
                 android:layout_height="70dp"
                 android:layout_margin="10dp"
@@ -229,12 +241,13 @@
                 android:textSize="30sp"
                 android:text="+"
                 android:backgroundTint="@color/orange"
+                android:onClick="onActionClick"
                 />
         </LinearLayout>
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:gravity="center_horizontal|center_vertical">
+            android:gravity="center">
 
             <Button
                 android:id="@+id/zero_btn"
@@ -248,6 +261,7 @@
                 android:textSize="30sp"
                 android:gravity="start|center_vertical"
                 android:paddingHorizontal="33dp"
+                android:onClick="onNumberClick"
                 />
             <Button
                 android:id="@+id/dot_btn"
@@ -259,6 +273,7 @@
                 android:text=","
                 android:textSize="30sp"
                 android:textColor="@color/white"
+                android:onClick="onNumberClick"
                 />
             <Button
                 android:id="@+id/equal_btn"
@@ -269,6 +284,7 @@
                 android:backgroundTint="@color/orange"
                 android:text="="
                 android:textSize="30sp"
+                android:onClick="onActionClick"
                 />
         </LinearLayout>
 
