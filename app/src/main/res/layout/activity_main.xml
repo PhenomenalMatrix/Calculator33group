@@ -27,7 +27,9 @@
             android:textSize="80sp"
             android:gravity="end"
             android:paddingHorizontal="10dp"
-            />
+            android:maxLines="1"
+            app:autoSizeTextType="uniform"
+            app:autoSizeMinTextSize="4sp" />
     </FrameLayout>
 
     <LinearLayout

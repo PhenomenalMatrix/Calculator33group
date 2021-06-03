@@ -71,7 +71,11 @@ public class MainActivity extends AppCompatActivity {
     public void onActionClick(View view){
         switch (view.getId()){
             case R.id.clear_btn:
-                textView.setText(textView.getText().toString().substring(0,textView.getText().toString().length() - 1));
+                if (!textView.getText().toString().isEmpty()) {
+                    textView.setText(textView.getText().toString().substring(0, textView.getText().toString().length() - 1));
+                } else {
+                    textView.setText("");
+                }
                 break;
             case R.id.plus_btn:
                 firstValue = Integer.valueOf(textView.getText().toString());
@@ -79,10 +83,10 @@ public class MainActivity extends AppCompatActivity {
                 operation = "+";
                 break;
             case R.id.equal_btn:
-                if(operation!=null){
+                if (operation != null) {
                     String two = textView.getText().toString().replace(String.valueOf(firstValue) + operation, "");
                     secondValue = Integer.parseInt(two);
-                    switch (operation){
+                    switch (operation) {
                         case "+":
                             plus();
                             break;
